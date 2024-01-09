@@ -1,0 +1,80 @@
+body{
+	margin:0px;
+	background-image: url(1234.png);
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 3;
+	justify-content:space-around;
+	/*align-items: flex-start;
+	align-content: space-around;*/
+}
+
+h1{
+	font-family: "Times New Roman";
+	font-size: 3em;
+	color: darkred;
+	box-shadow: 4px 4px 5px darkred;
+	border-bottom: 3px solid green;
+	border-right: 3px solid green;
+	width: 400px;
+	text-align: center;
+	margin-top: 10px;
+
+}
+img{
+	width: 300px;
+	height:300px;
+	margin: 15px;
+	transition: all 1s;
+}
+img:hover{
+	transform: scale(1.1);
+	/*animation: pulse 5s infinite;*/
+}
+.item1{
+	flex-shrink:2;
+}
+.btn{
+	font-size: 2rem;
+	font-weight: 700;
+	padding: 0.5em 1em;
+	color: rgb(40, 10, 10);
+	/*background-color: rgb(50, 20, 10);*/
+	border: 10px solid rgb(30, 10, 10);
+	border-radius:5px ;
+	transition-property:transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	
+}
+.btn:hover{
+display: flex;
+justify-content: center;
+ transform: translateX(-30px);
+ background-color:whitesmoke;
+ color:darkred;
+}
+@keyframes slideInLeft {
+	from{
+		transform: translateX(-300px);
+
+	}
+	to {
+         transform: translateX(100px);
+	}
+}
+.heading{
+	animation:slideInLeft 3s linear 0s infinite normal backwards ;
+	/*animation-name:slideInLeft ;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-iteration-count:1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;*/
+	transform: translateX(500px);
+
+}
